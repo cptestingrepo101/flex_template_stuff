@@ -1,0 +1,21 @@
+{
+    "name": "Read and Write Cloud Storage Data",
+    "description": "reads input csv and writes to specified output location",
+    "parameters": [
+        {
+            "name": "input",
+            "label": "the input csv to read from",
+            "helpText": "the input csv to read from"
+        },
+        {
+            "name": "output",
+            "label": "the output location",
+            "helpText": "the output location"
+        },
+        {
+            "name": "mode",
+            "label": "the sink mode - either `bq` or `gcs`",
+            "helpText": "the mode to use for output sink"
+        }
+    ]
+}

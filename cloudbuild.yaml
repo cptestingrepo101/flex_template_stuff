@@ -1,0 +1,6 @@
+steps:
+    - name: 'gcr.io/cloud-builders/docker'
+      args: ['build', '-t', 'gcr.io/bigquery-cp-project/dataflow/move-arg-runtime-image:move-arg-runtime-tag', '.']
+
+    - name: 'gcr.io/cloud-builders/docker'
+      args: ['push', 'gcr.io/bigquery-cp-project/dataflow/move-arg-runtime-image:move-arg-runtime-tag']
